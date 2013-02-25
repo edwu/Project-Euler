@@ -5,12 +5,8 @@ triangle_numbers = [1]
 
 
 def euler42():
-    #number_of_triangle_numbers = 0
     words = open('words.txt').read().replace('"', '').split(',')
     number_of_triangle_numbers = len(filter(lambda word: is_triangle_number(value_of_word(word)), words))
-    #for word in words:
-    #    if is_triangle_number(value_of_word(word)):
-    #        number_of_triangle_numbers += 1
     print "Number of triangle numbers:", number_of_triangle_numbers
 
 
